@@ -34,6 +34,55 @@
 
 //9. call the .getInfo() method on myPlaylist
 
+import {Song, Musician, Playlist} from './MusicData.js';
+
+const Musician1 = new Musician (
+    "Leon Bridges",
+    "acoustic guitar",
+    "Soul",
+);
+
+const Musician2 = new Musician (
+    "Grateful Dead",
+    "banjo",
+    "Blues Rock",
+);
+
+const Musician3 = new Musician (
+    "Red Hot Chili Peppers",
+    "electric guitar",
+    "Alternative Rock",
+
+);
+
+const Song1 = new Song (
+    "River",
+    Musician1,
+    "Coming Home",
+);
+
+const Song2 = new Song (
+    "Althea",
+    Musician2,
+    "Go to Heaven",
+);
+
+const Song3 = new Song (
+    "If",
+    Musician3,
+    "Stadium Arcadium",
+
+);
+
+const myPlaylist = new Playlist (
+    "Calm Morning",
+    Song1,
+    Song2,
+    Song3,
+);
+
+myPlaylist.getInfo();
+
 
 //DO NOT EDIT BELOW THIS LINE
 //the code below here will insert the Playlist data into the webpage.

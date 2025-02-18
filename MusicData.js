@@ -21,3 +21,39 @@
 //5. export all three classes to make them available to the other JS files.
 
 
+class Song {
+    constructor (title, artist, album) {
+        this.title = title;
+        this.artist = artist;
+        this.album = album;
+
+    };
+}
+
+class Musician {
+    constructor (name, instrument, genre) {
+       this.name = name;
+       this.instrument = instrument;
+       this.genre = genre;
+    }
+
+}
+
+class Playlist {
+    constructor (name, song1, song2, song3) {
+        this.name = name;
+        this.song1 = song1;
+        this.song2 = song2;
+        this.song3 = song3;
+    };
+
+    getInfo () {
+        console.log(`The playlist ${this.name} has the following songs:`);
+        console.log(`${this.song1.title} by ${this.song1.artist},`);
+        console.log(`${this.song2.title} by ${this.song2.artist}, &`);
+        console.log(`${this.song3.title} by ${this.song3.artist}.`);
+    };
+
+   };
+
+   export {Song, Musician, Playlist};
